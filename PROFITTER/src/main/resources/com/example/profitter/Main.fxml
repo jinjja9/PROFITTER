@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" prefHeight="299.0" prefWidth="265.0" vgap="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.profitter.MainController">
+    <VBox alignment="TOP_CENTER" prefHeight="229.0" prefWidth="407.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <children>
+            <TextField fx:id="usernameField" promptText="Tên đăng nhập" />
+            <PasswordField fx:id="passwordField" promptText="Mật khẩu" />
+            <Button fx:id="loginButton" onAction="#logIn" text="Đăng nhập">
+                <VBox.margin>
+                    <Insets top="28.0" />
+                </VBox.margin>
+            </Button>
+            <Button fx:id="registerButton" onAction="#openRegisterView" text="Đăng ký">
+                <VBox.margin>
+                    <Insets top="15.0" />
+                </VBox.margin>
+            </Button>
+            <Button fx:id="exitButton" onAction="#exit" text="Thoát">
+                <VBox.margin>
+                    <Insets top="20.0" />
+                </VBox.margin>
+            </Button>
+
+        </children>
+    </VBox>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
